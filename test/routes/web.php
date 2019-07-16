@@ -12,9 +12,7 @@
 */
 
 Route::get('/', 'IndexController@show')->name('index');
-Route::get('/abc',function(){
-    return view('layouts.index');
-});
+
 Route::get('/form', 'FormController@view')->name('form');
 Route::post('/form', 'FormController@add');
 Route::get('/delete','FormController@delete');
