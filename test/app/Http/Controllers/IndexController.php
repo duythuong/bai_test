@@ -11,6 +11,6 @@ class IndexController extends Controller
         
         $data = DB::table('sinhvien')->get();
         // dd($data[0]);
-        return view('index',['data'=>$data]);
+        return view('layout_index',['data'=>$data]);
     }
 }

@@ -12,9 +12,9 @@ class FormController extends Controller
         $value = $request->input('value');
         if($value){
             $data = $data = DB::table('sinhvien')->where('id', '=', $value)->get();
-            return view('form',['data'=>$data[0]]);
+            return view('layout_form',['data'=>$data[0]]);
         }
-        return view('form',['data'=>$data]);
+        return view('layout_form',['data'=>$data]);
     }
     
     public function add(Request $request){
