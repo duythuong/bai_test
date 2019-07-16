@@ -15,7 +15,12 @@
         <div class="row">
             <div class="col">
                 {{-- @foreach ($data as $item) --}}
-            <form action="{{route('form')}}" method="POST">
+            <form 
+        @if ($data)
+            action="http://localhost/test/public/form?value={{$data->id}}"
+        @else
+           action="{{route('form')}}"
+        @endif method="POST">
               {{csrf_field()}}
                 <div class="form-row">
                   <div class="col-md-4 mb-3">

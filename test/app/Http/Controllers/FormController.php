@@ -24,13 +24,27 @@ class FormController extends Controller
         $usename = $request->input('usename');
         $email = $request->input('email');
         $state = $request->input('state');
-        $data = DB::table('sinhvien')->updateOrInsert(['id'=>$value],[
+        if($value){
+            $data = DB::table('sinhvien')
+        ->where('id', $value)
+        ->update([
+            'firstname'=>$firstname,
+            'lastname'=>$lastname,
+            'usename'=>$usename,
+            'email'=>$email,
+            'state'=>$state
+            ]);
+        }else{
+        $data = DB::table('sinhvien')
+        ->insert([
             'firstname'=>$firstname,
             'lastname'=>$lastname,
             'usename'=>$usename,
             'email'=>$email,
             'state'=>$state
         ]);
+        }
+        // dd($value);
         return redirect()->route('index');
     }
     public function delete(Request $request){
