@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th7 16, 2019 lúc 05:38 AM
+-- Thời gian đã tạo: Th7 16, 2019 lúc 06:53 AM
 -- Phiên bản máy phục vụ: 10.1.34-MariaDB
 -- Phiên bản PHP: 7.2.8
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Cơ sở dữ liệu: `sinhVien`
+-- Cơ sở dữ liệu: `sinhvien`
 --
 
 -- --------------------------------------------------------
@@ -42,12 +42,7 @@ CREATE TABLE `sinhvien` (
 --
 
 INSERT INTO `sinhvien` (`id`, `firstname`, `lastname`, `usename`, `email`, `state`) VALUES
-(4, 'duy213123', 'thuong', 'sdfsdfsd', 'werwe@qdasdas', 'Quảng Ngãi'),
-(5, 'duy', 'thuong', 'sdfsdfsd', 'asdas@dfsdf', 'Quảng Ngãi'),
-(6, 'duy', 'thuong', 'sdfsdfsd', 'werwe@qdasdas', 'Quảng Ngãi'),
-(7, 'duy', 'thuong', 'qwe', 'qweqwe@qweqwe', 'Quảng Ngãi'),
-(8, 'duy', 'thuong', '1234', '1234@qweqwe', 'Quảng Ngãi'),
-(9, 'duy', 'thuong', '123456789', '1234@qweqwe', 'Quảng Ngãi');
+(27, 'thường', 'nguyễn', 'duythuong', 'thuongduy109@gmail.com', 'Quảng Ngãi');
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -67,7 +62,7 @@ ALTER TABLE `sinhvien`
 -- AUTO_INCREMENT cho bảng `sinhvien`
 --
 ALTER TABLE `sinhvien`
-  MODIFY `id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
