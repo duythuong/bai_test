@@ -15,5 +15,6 @@ Route::get('/', 'IndexController@show')->name('index');
 
 Route::get('/form', 'FormController@view')->name('form');
 Route::post('/form', 'FormController@add');
+Route::get('/edit', 'FormController@view');
 Route::get('/delete','FormController@delete');
 Route::get('/show', 'ShowController@show');

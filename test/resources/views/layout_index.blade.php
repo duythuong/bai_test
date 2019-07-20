@@ -29,7 +29,7 @@
                       <a href="http://localhost/test/public/delete?value={{$item->id}}" class="btn btn-danger btn-sm active" role="button" aria-pressed="true">Delete</a>
                       </td>
                         <td>
-                        <a href="http://localhost/test/public/form?value={{$item->id}}" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">edit</a>
+                        <a href="http://localhost/test/public/edit?value={{$item->id}}" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">edit</a>
                         </td>
                         <td>
                         <a href="http://localhost/test/public/show?value={{$item->id}}" class="btn btn-info btn-sm active" role="button" aria-pressed="true">show</a>
